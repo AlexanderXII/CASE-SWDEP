@@ -1,0 +1,39 @@
+CASE-SWDEP CDM File: 'example-db-gupr.cdmod'
+model 1282 722
+
+table ELEM
+pos 22 284
+size 150 70
+row id_elem CHAR(1) PK
+row n_elem VARCHAR(200) UQ
+
+table GUPR
+pos 268 284
+size 150 70
+row row INTEGER PK
+row column INTEGER PK
+
+table QUAL
+pos 303 25
+size 150 90
+row id_qual INTEGER PK
+row n_qual VARCHAR(200) UQ
+row period INTEGER 
+
+table SPEC
+pos 27 36
+size 150 70
+row id_spec INTEGER PK
+row n_spec VARCHAR(200) UQ
+
+relationship ELEM GUPR
+type one-many
+m mandatory optional
+
+relationship QUAL SPEC
+type one-many
+m mandatory optional
+
+relationship SPEC GUPR
+type aggregate
+m mandatory mandatory

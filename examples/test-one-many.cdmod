@@ -1,0 +1,66 @@
+CASE-SWDEP CDM File: 'test-one-many.cdmod'
+model 1282 722
+
+table authoe10
+pos 40 120
+size 150 70
+row id_author INTEGER PK
+row name_author VARCHAR(200) UQ
+
+table author00
+pos 31 318
+size 150 70
+row id_author INTEGER PK
+row name_author VARCHAR(200) UQ
+
+table author01
+pos 37 213
+size 150 70
+row id_author INTEGER PK
+row name_author VARCHAR(200) UQ
+
+table author11
+pos 37 22
+size 150 70
+row id_author INTEGER PK
+row name_author VARCHAR(200) UQ
+
+table book00
+pos 351 318
+size 150 70
+row id_book INTEGER PK
+row title_book VARCHAR(200) 
+
+table book01
+pos 345 213
+size 150 70
+row id_book INTEGER PK
+row title_book VARCHAR(200) 
+
+table book10
+pos 344 119
+size 150 70
+row id_book INTEGER PK
+row title_book VARCHAR(200) 
+
+table book11
+pos 343 27
+size 150 70
+row id_book INTEGER PK
+row title_book VARCHAR(200) 
+
+relationship authoe10 book10
+type one-many
+m mandatory optional
+
+relationship author00 book00
+type one-many
+m optional optional
+
+relationship author01 book01
+type one-many
+m optional mandatory
+
+relationship author11 book11
+type one-many
+m mandatory mandatory

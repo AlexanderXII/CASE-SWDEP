@@ -1,0 +1,67 @@
+CASE-SWDEP CDM File: 'test-simple.cdmod'
+model 1282 722
+
+table author
+pos 22 169
+size 150 70
+row id_author INTEGER PK
+row name_author VARCHAR(200) UQ
+
+table book
+pos 267 171
+size 150 70
+row id_book INTEGER PK
+row title_book VARCHAR(200) 
+
+table group
+pos 272 301
+size 150 70
+row id_group INTEGER PK
+row title_group VARCHAR(100) UQ
+
+table gupr
+pos 273 436
+size 150 90
+row row INTEGER PK
+row column INTEGER PK
+row cell INTEGER 
+
+table passport
+pos 265 29
+size 150 70
+row id_passport INTEGER PK
+row num_passport INTEGER UQ
+
+table person
+pos 17 28
+size 150 70
+row id_person INTEGER PK
+row name_person VARCHAR(200) 
+
+table spec
+pos 31 434
+size 150 70
+row id_spec INTEGER PK
+row title_spec CHAR(200) 
+
+table student
+pos 31 301
+size 150 70
+row id_student INTEGER PK
+row name_student VARCHAR(200) 
+
+relationship author book
+type one-many
+m mandatory mandatory
+
+relationship person passport
+type one-one
+m mandatory mandatory
+
+relationship spec gupr
+type aggregate
+m mandatory mandatory
+
+relationship student group
+type many-many
+m mandatory mandatory

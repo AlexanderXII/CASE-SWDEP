@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Autorization</class>
+ <widget class="QWidget" name="Autorization">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>292</width>
+    <height>445</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="connect">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>390</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Подключиться</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="disconnect">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>390</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Отключиться</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>271</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="hostLabel">
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Хост</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="hostLine">
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="nameDBLabel">
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Имя базы данных</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="nameDBLine">
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="userLabel">
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Имя пользователя</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="userLine">
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="portLabel">
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Порт</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="portSpinBox">
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="maximum">
+       <number>10000</number>
+      </property>
+      <property name="value">
+       <number>5432</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="passwordLabel">
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Пароль</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="passwordLine">
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>12345</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

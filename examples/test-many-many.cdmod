@@ -1,0 +1,66 @@
+CASE-SWDEP CDM File: 'test-many-many.cdmod'
+model 1282 722
+
+table group00
+pos 336 405
+size 150 70
+row id_group INTEGER PK
+row title_group VARCHAR(100) UQ
+
+table group01
+pos 341 285
+size 150 70
+row id_group INTEGER PK
+row title_group VARCHAR(100) UQ
+
+table group10
+pos 337 153
+size 150 70
+row id_group INTEGER PK
+row title_group VARCHAR(100) UQ
+
+table group11
+pos 339 39
+size 150 70
+row id_group INTEGER PK
+row title_group VARCHAR(100) UQ
+
+table student00
+pos 37 407
+size 150 70
+row id_student INTEGER PK
+row name_student VARCHAR(200) 
+
+table student01
+pos 32 279
+size 150 70
+row id_student INTEGER PK
+row name_student VARCHAR(200) 
+
+table student10
+pos 29 156
+size 150 70
+row id_student INTEGER PK
+row name_student VARCHAR(200) 
+
+table student11
+pos 33 35
+size 150 70
+row id_student INTEGER PK
+row name_student VARCHAR(200) 
+
+relationship student00 group00
+type many-many
+m optional optional
+
+relationship student01 group01
+type many-many
+m optional mandatory
+
+relationship student10 group10
+type many-many
+m mandatory optional
+
+relationship student11 group11
+type many-many
+m mandatory mandatory
